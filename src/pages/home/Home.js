@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import MyButton from "../../components/atoms/buttons/PrimaryButton";
 import MainText from "../../components/atoms/text/MainText";
@@ -19,7 +20,9 @@ const Home = () => {
       </div>
       <div style={buttonCont}>
         <Grid item xs={9}>
-          <MyButton text="Get Started" />
+          <Link style={{ textDecoration: "none" }} to="/highlights">
+            <MyButton text="Get Started" />
+          </Link>
         </Grid>
       </div>
     </div>
