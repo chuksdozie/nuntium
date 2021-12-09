@@ -21,7 +21,10 @@ const Home = () => {
       <div style={buttonCont}>
         <Grid item xs={9}>
           <Link style={{ textDecoration: "none" }} to="/highlights">
-            <MyButton text="Get Started" />
+            <MyButton
+              text="Get Started"
+              onClick={() => window.navigator.vibrate(500)}
+            />
           </Link>
         </Grid>
       </div>

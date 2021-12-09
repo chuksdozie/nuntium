@@ -23,11 +23,13 @@ const MyButton = styled(Button)({
 });
 
 const PrimaryButton = (props) => {
-  const { text } = props;
+  const { text, onClick } = props;
   return (
     <div>
       <Grid item xs={12}>
-        <MyButton fullWidth>{text || "insert a text"}</MyButton>
+        <MyButton fullWidth onClick={onClick}>
+          {text || "insert a text"}
+        </MyButton>
       </Grid>
     </div>
   );
