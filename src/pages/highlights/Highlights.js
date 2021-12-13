@@ -13,17 +13,17 @@ const Highlights = () => {
     <div style={main}>
       <div style={header}>
         <GiHamburgerMenu
-          style={{ color: "red", width: "30px", height: "30px" }}
+          style={{ color: "red", width: "25px", height: "25px" }}
         />
         <div style={searchCont}>
-          <input style={search} type="text" placeholder="search ..." />
           <BiSearchAlt2
-            style={{ color: "red", width: "30px", height: "30px" }}
+            style={{ color: "red", width: "25px", height: "25px" }}
           />
+          <input style={search} type="text" placeholder="search ..." />
         </div>
-        <Link to="/">
+        <Link to="/highlights">
           <AiTwotoneHome
-            style={{ color: "red", width: "30px", height: "30px" }}
+            style={{ color: "red", width: "25px", height: "25px" }}
           />
         </Link>
       </div>
